@@ -7,5 +7,5 @@ Cliente::Cliente():Persona(){
 
 Cliente::Cliente(int rfc):Persona(){
   
-   
+   RFC=rfc
 }

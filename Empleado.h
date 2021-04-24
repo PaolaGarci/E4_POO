@@ -1,8 +1,10 @@
+#ifndef EMPLEADO_H_INCLUDED
+#define EMPLEADO_H_INCLUDED
 #include <iostream>
 #include "Persona.hpp"
 using namespace std;
 
-class Empleado{
+class Empleado:public Persona{
     private:
         string cargo;
     public:
@@ -12,3 +14,4 @@ class Empleado{
         void borrar();
         void modificar();
 };
+#endif

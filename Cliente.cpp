@@ -1,11 +1,11 @@
 #include "Cliente.h"
 
 Cliente::Cliente():Persona(){
-    RFC=0;
+    RFC="";
  
 }
 
-Cliente::Cliente(int rfc):Persona(){
+Cliente::Cliente(string rfc):Persona(){
   
    RFC=rfc
 }

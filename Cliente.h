@@ -6,11 +6,11 @@ using namespace std;
 
 class Cliente:public Persona{
 private:
-    int RFC;
+    string RFC;
 
 public:
     Cliente();
-    Cliente( int rfc);
+    Cliente(string rfc):Persona();
 
 };
 #endif // PAQUETE_H_INCLUDED

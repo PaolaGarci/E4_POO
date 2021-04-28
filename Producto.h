@@ -1,21 +1,23 @@
-#ifndef PAQUETE_H_INCLUDED
-#define PAQUETE_H_INCLUDED
-#include "Envio.h"
 
+#include "inventario_productos.hpp"
 using namespace std;
 
-class Paquete:public Envio{
+class Producto{
 private:
-
-    float profundidad;
+    int codigoProducto;
+    float precioVenta;
+    float precioCompra;
+    float size;
     float peso;
-    float costoxkg;
 public:
-    Paquete();
-    Paquete(string nom, string add, string city, string state,int dest, int rem,double cost, float la, float an, float prof, float weight, float costo);
-    double calculaCosto();
+    Producto();
+    Producto();
+    void mostrarProducto();
+    void agregar();
+    void modificar();
+    void borrar();
 };
-#endif // PAQUETE_H_INCLUDED
+
 
 
 

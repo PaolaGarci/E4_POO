@@ -1,17 +1,16 @@
-#ifndef EMPLEADO_H_INCLUDED
-#define EMPLEADO_H_INCLUDED
-#include "Persona.h"
+#include "Empleado.h"
 
-using namespace std;
+// Constructor Default
+Empleado :: Empleado() 
+{
+    Cargo="";
+    Ubicacion="";
+}
 
-class Empleado:public Persona{
-private:
-    string Cargo;
-    string Ubicacion;
-  
-public:
-    Cargo();
-    Cargo( string car, string ubi);
-   
-};
-#endif // EMPLEADO_H_INCLUDED
+// Constructor con parametros
+Empleado :: Empleado(string car, string ubi) 
+{
+    Cargo=car;
+    Ubicacion=ubi;
+}
+

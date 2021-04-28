@@ -1,17 +1,18 @@
+
 #ifndef EMPLEADO_H_INCLUDED
 #define EMPLEADO_H_INCLUDED
-#include <iostream>
-#include "Persona.hpp"
+#include "Persona.h"
+
 using namespace std;
 
 class Empleado:public Persona{
-    private:
-        string cargo;
-    public:
-        Empleado();
-        Empleado(string); //Recibe el cargo 
-        void agregar();
-        void borrar();
-        void modificar();
+private:
+    string Cargo;
+    string Ubicacion;
+  
+public:
+    Cargo();
+    Cargo( string car, string ubi);
+   
 };
-#endif
+#endif // EMPLEADO_H_INCLUDED

@@ -1,5 +1,7 @@
 #include "Empleado.h"
 
+# JADLKSFJADLSKFJ KLÑS
+
 // Constructor Default
 Empleado :: Empleado() 
 {

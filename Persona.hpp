@@ -13,5 +13,6 @@ class Persona
     private:
         Persona();
         virtual generarOrden() = 0;
-
+        void mostrarPersona();
+        void agregarDatos(string, string, char, int, string);  
 };

@@ -15,14 +15,18 @@ class Sucursal{
     public:
         Sucursal();
         Sucursal(string);
-        void agregar(Producto);//tiene q haber productos adentro de los metodos segun yo
+     //los siguientes van a cambiar los empleados de una sucursal
+        void agregar(Empleado);
+        void modificar(Empleado);
+        void borrar(Empleado);
+    //sobreescritura para productos
+        void agregar(Producto);
         void modificar(Producto);
-        void borrar();
+        void borrar(Producto);
     protected:
         string nombre;
         Producto listaProductos[5];
-        string listaSucursales[10];
-
+        Empleado listaEmpleados[3];
 };
 
 #endif /* sucursal_hpp */

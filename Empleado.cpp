@@ -6,14 +6,25 @@
 Empleado :: Empleado():Persona()
 {
     Cargo="";
-    Ubicacion="";
+    Sucursal="";
 }
 
 // Constructor con parametros
-Empleado :: Empleado(string nom, string dir, char sex, int cel, string fechaNac,string car, string ubi):Persona(nom,dir,sex, cel,fechaNac)
+Empleado :: Empleado(string nom, string dir, char sex, int cel, string fechaNac,string car, string suc):Persona(nom,dir,sex, cel,fechaNac)
 {
     Cargo=car;
-    Ubicacion=ubi;
+    Sucursal=suc;
 }
 void Empleado :: transferir(){
+}
+//setters
+void Empleado::setSucursal(string s){
+    Sucursal=s;
+}
+void Empleado::setCargo(string c){
+    Cargo=c;
+}
+//getters
+string Empleado::getCargo(){
+    return Cargo;
 }

@@ -9,10 +9,11 @@
 #define inventario_productos_hpp
 class InventarioProductos{
     protected:
-        int cantidad;
+        int cantidadExistentes;
     
     public:
-        Inventario_productos(); 
+        InventarioProductos();
+        InventarioProductos(int);
         
 };
 

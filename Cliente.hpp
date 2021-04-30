@@ -11,6 +11,7 @@ private:
 public:
     Cliente();
     Cliente(string rfc):Persona();
+    void generarOrden();
 
 };
 #endif // PAQUETE_H_INCLUDED

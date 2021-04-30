@@ -13,6 +13,7 @@ private:
 public:
     Cargo();
     Cargo( string car, string ubi);
+    void generarOrden();
    
 };
 #endif // EMPLEADO_H_INCLUDED

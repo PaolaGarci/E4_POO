@@ -9,3 +9,8 @@ Cliente::Cliente(string rfc):Persona(){
   
    RFC=rfc
 }
+
+void Cliente :: generarOrden()
+{
+    
+}

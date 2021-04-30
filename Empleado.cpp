@@ -14,3 +14,8 @@ Empleado :: Empleado(string car, string ubi)
     Ubicacion=ubi;
 }
 
+void Empleado :: generarOrden()
+{
+
+}
+

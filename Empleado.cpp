@@ -28,12 +28,16 @@ void Empleado::setCargo(string c){
 string Empleado::getCargo(){
     return Cargo;
 }
-<<<<<<< HEAD
 
-void Empleado :: generarOrden()
+void Empleado :: mostrarPersona()
 {
-
+    cout << "Nombre: " << nombre << endl;
+    cout << "Direccion: " << direccion << endl;
+    cout << "Sexo: " << sexo << endl;
+    cout << "Telefono: " << telefono << endl;
+    cout << "Fecha de Nacimiento: " << fechaNacimiento << endl;
+    cout << "Cargo: " << cargo << endl;
+    cout << "Sucursal: " << sucursal << endl;
 }
 
-=======
->>>>>>> 34ed70d320f2859d8bed433b9ce32fe3a95773b4
+

@@ -1,4 +1,5 @@
 #include "Producto.hpp"
+#include <iostream>
 //Constructores
 Producto::Producto(){
     codigoProducto=0;
@@ -18,16 +19,7 @@ void Producto::mostrarProducto(){
     cout<<codigoProducto<<endl;
     cout<<precioVenta<<endl;
     cout<<precioCompra<<endl;
-    cout<<size<<end;
+    cout<<size<<endl;
     cout<<peso<<endl;
-    
-}
-//falta sobreescribir los metodos siguientes
-void Producto::agregar(){
-}
-void Producto::modificar(){
-    
-}
-void Producto::borrar(){
     
 }

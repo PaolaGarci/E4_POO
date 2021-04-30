@@ -8,9 +8,11 @@
 #include "InventarioProductos.hpp"
 //CONSTRUCTORES
 InventarioProductos::InventarioProductos(){
-    cantidad=10;
+    cantidadExistentes=10;
 }
 InventarioProductos(int cant){
-    
+    cantidadExistentes=cant;
 }
-
+void InventarioProductos::setCantidadExistentes(int cant){
+    cantidadExistentes=cant;
+}

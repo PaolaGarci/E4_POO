@@ -9,15 +9,16 @@
 #define sucursal_hpp
 #include <stdio.h>
 #include "Producto.hpp"
+#include "InventarioProductos.hpp"
 #include <iostream>
 using namespace std;
-class Sucursal{
+class Sucursal:public InventarioProductos{
     public:
         Sucursal();
         Sucursal(string);
      //los siguientes van a cambiar los empleados de una sucursal
         void agregar(Empleado);
-        void modificar(Empleado);
+        void modificar(Empleado,string);
         void borrar(Empleado);
     //sobreescritura para productos
         void agregar(Producto);

@@ -15,4 +15,5 @@ Empleado :: Empleado(string nom, string dir, char sex, int cel, string fechaNac,
     Cargo=car;
     Ubicacion=ubi;
 }
-
+void Empleado :: transferir(){
+}

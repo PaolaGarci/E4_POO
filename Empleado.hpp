@@ -1,7 +1,7 @@
 
-#ifndef EMPLEADO_H_INCLUDED
-#define EMPLEADO_H_INCLUDED
-#include "Persona.h"
+#ifndef EMPLEADO_HPP_INCLUDED
+#define EMPLEADO_HPP_INCLUDED
+#include "Persona.hpp"
 
 using namespace std;
 

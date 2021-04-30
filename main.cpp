@@ -1,10 +1,11 @@
-#include "Persona.hpp"
+#include "Cliente.hpp"
 #include "sucursales.hpp"
-#include "Empleado.h"
-#include "Persona"
+#include "Empleado.hpp"
+#include "InventarioProductos.hpp"
 
 int main ()
 {
+    // Creando una sucursal
 
 
     return 0;

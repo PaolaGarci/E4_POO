@@ -11,6 +11,6 @@ InventarioProductos::InventarioProductos(){
     cantidad=10;
 }
 InventarioProductos(int cant){
-    
+    cantidad=cant;
 }
 

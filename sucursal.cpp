@@ -7,8 +7,6 @@
 
 #include "Sucursal.hpp"
 Sucursal::Sucursal(){
-    //Producto P1,P2,P3,P4,P5 ; //Crea productos default para la lista, esta tendrá q ser diferente al decidir q productos queremos
-    Producto listaP[5]={P1,P2,P3,P4,P5};
     listaProductos=listaP;
     nombre=" ";
     
@@ -24,26 +22,15 @@ Sucursal::Sucursal(string nom){
 void Sucursal::agregar(Empleado e){ //se agrega la sucursal de un empleado
     e.setSucursal(nombre);
 }
-void Sucursal::modificar(Empleado e){ //cargos
-    e.setCargo();
+void Sucursal::modificar(Empleado e,string carg){ //cargos
+    e.setCargo(carg);
     
 }
-void Sucursal::borrar(Empleado){
-    Empleado vacio();
-    arr[i]=vacio;
+void Sucursal::borrar(Empleado e){
+    e.setSucursal(" ");
 }
-void Sucursal::imprimirSucursales(){
-    for (int i=0; i<10; i++){
-        cout << listaSucursales[i] <<endl;
-    }
-}
-//metodos sobreescritura (funciones) de productos
-void agregar(Producto){
+//metodos sobrecarga (funciones) de productos, agrega cantidad de producto a una sucursal
+void Sucursal::agregar(Producto lista){
     
 }
-void modificar(Producto){
-    
-}
-void borrar(Producto){
-    
-}
+

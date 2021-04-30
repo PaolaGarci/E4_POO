@@ -10,7 +10,7 @@ Empleado :: Empleado()
 }
 
 // Constructor con parametros
-Empleado :: Empleado(string car, string ubi) 
+Empleado :: Empleado(string nom, string dir, char sex, int cel, string fechaNac,string car, string ubi) 
 {
     Cargo=car;
     Ubicacion=ubi;

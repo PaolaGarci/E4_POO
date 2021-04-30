@@ -9,9 +9,10 @@
 #define sucursal_hpp
 #include <stdio.h>
 #include "Producto.hpp"
+#include "InventarioProductos.hpp"
 #include <iostream>
 using namespace std;
-class Sucursal{
+class Sucursal:public InventarioProductos{
     public:
         Sucursal();
         Sucursal(string);

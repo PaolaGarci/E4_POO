@@ -14,6 +14,7 @@ class InventarioProductos{
     public:
         InventarioProductos();
         InventarioProductos(int);
+        void setCantidadExistentes(int);
         
 };
 

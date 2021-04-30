@@ -8,7 +8,7 @@ int main (){
     Producto P1,P2,P3,P4,P5 ; //Crea productos default para la lista, esta tendrá q ser diferente al decidir q productos queremos
     Producto listaP[5]={P1,P2,P3,P4,P5};
     // Creando una sucursal
-    Sucursal
+    Sucursal sucursal1;
 
     // Creando un empleado
 

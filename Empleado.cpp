@@ -1,6 +1,6 @@
 #include "Empleado.hpp"
 
-# JADLKSFJADLSKFJ KLÑS
+
 
 // Constructor Default
 Empleado :: Empleado():Persona()

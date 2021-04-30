@@ -13,6 +13,7 @@ private:
 public:
     Cargo();
     Cargo( string nom, string dir, char sex, int cel, string fechaNac, string car, string ubi);
+    void transferir();
    
 };
 #endif // EMPLEADO_H_INCLUDED

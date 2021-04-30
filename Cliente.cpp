@@ -1,13 +1,13 @@
 #include "Cliente.hpp"
 
-Cliente::Cliente():Persona(){
+Cliente::Cliente(){
     RFC="";
  
 }
 
-Cliente::Cliente(string nom, string dir, char sex, int cel, string fechaNac,string rfc):Persona(nom,dir,sex, cel,fechaNac){
+Cliente::Cliente(string nom, string dir, char sex, int cel, string fechaNac,string rfc){
   
-   RFC=rfc
+   RFC=rfc;
 }
 
 void Cliente :: mostrarPersona()

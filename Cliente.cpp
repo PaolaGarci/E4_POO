@@ -5,7 +5,7 @@ Cliente::Cliente():Persona(){
  
 }
 
-Cliente::Cliente(string rfc):Persona(){
+Cliente::Cliente(string nom, string dir, char sex, int cel, string fechaNac,string rfc):Persona(){
   
    RFC=rfc
 }

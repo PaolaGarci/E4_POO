@@ -1,5 +1,5 @@
 
-#include "inventario_productos.hpp"
+#include "InventarioProductos.hpp"
 using namespace std;
 #include <iostream>
 

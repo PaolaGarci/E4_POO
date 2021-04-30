@@ -13,6 +13,6 @@ class Persona
 
     private:
         Persona();
-        virtual mostrarPersona() = 0;
+        virtual void mostrarPersona() = 0;
         void agregarDatos(string, string, char, int, string);  
 };

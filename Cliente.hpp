@@ -10,7 +10,7 @@ private:
 
 public:
     Cliente();
-    Cliente(string rfc):Persona();
+    Cliente(string nom, string dir, char sex, int cel, string fechaNac,string rfc):Persona();
 
 };
 #endif // PAQUETE_H_INCLUDED

@@ -7,7 +7,7 @@
 
 #include "Sucursal.hpp"
 
-Sucursal::Sucursal:InventarioProductos(){
+Sucursal::Sucursal:InventarioProductos(cantidadExistentes){
     listaProductos=listaP;
     nombre=" ";
     

@@ -10,7 +10,13 @@ Cliente::Cliente(string nom, string dir, char sex, int cel, string fechaNac,stri
    RFC=rfc
 }
 
-void Cliente :: generarOrden()
+void Cliente :: mostrarPersona()
 {
+    cout << "Nombre: " << nombre << endl;
+    cout << "Direccion: " << direccion << endl;
+    cout << "Sexo: " << sexo << endl;
+    cout << "Telefono: " << telefono << endl;
+    cout << "Fecha de Nacimiento: " << fechaNacimiento << endl;
+    cout << "RFC: " << RFC << endl;
     
 }

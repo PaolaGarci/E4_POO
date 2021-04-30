@@ -1,6 +1,7 @@
 
 #include "inventario_productos.hpp"
 using namespace std;
+#include <iostream>
 
 class Producto{
 private:

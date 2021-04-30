@@ -1,21 +1,33 @@
-#include "Paquete.h"
-
-Paquete::Paquete():Envio(){
- 
-    profundidad=0;
+#include "Producto.hpp"
+//Constructores
+Producto::Producto(){
+    codigoProducto=0;
+    precioVenta=0;
+    precioCompra=0;
+    size=0;
     peso=0;
-    costoxkg=0;
 }
-
-Paquete::Paquete(string nom, string add, string city, string state,int dest, int rem,double cost, float la, float an, float prof, float weight, float costo):Envio(nom,add,city,state,dest,rem, cost, la, an){
-  
-    profundidad=prof;
-    if (weight>0 && costo>0){
-        peso=weight;
-        costoxkg=costo;
-    }
+Producto::Producto(int codP,float pVenta,float pCompra,float s,float p){
+    codigoProducto=codP;
+    precioVenta=pVenta;
+    precioCompra=pCompra;
+    size=s;
+    peso=p;
 }
-double Paquete::calculaCosto() {
-  Costo_envio=Costo_envio + (peso * costoxkg);
-  return Costo_envio;
+void Producto::mostrarProducto(){
+    cout<<codigoProducto<<endl;
+    cout<<precioVenta<<endl;
+    cout<<precioCompra<<endl;
+    cout<<size<<end;
+    cout<<peso<<endl;
+    
+}
+//falta sobreescribir los metodos siguientes
+void Producto::agregar(){
+}
+void Producto::modificar(){
+    
+}
+void Producto::borrar(){
+    
 }

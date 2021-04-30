@@ -12,11 +12,9 @@ private:
   
 public:
     Cargo();
-<<<<<<< HEAD
     Cargo( string car, string ubi);
-    void generarOrden();
-=======
     Cargo( string nom, string dir, char sex, int cel, string fechaNac, string car, string ubi);
+    void mostrarPersona();
     void transferir();
     //setters
     void setSucursal(string);
@@ -24,7 +22,6 @@ public:
     //getters
     string getSucursal();
     string getCargo();
->>>>>>> 34ed70d320f2859d8bed433b9ce32fe3a95773b4
    
 };
 #endif // EMPLEADO_H_INCLUDED

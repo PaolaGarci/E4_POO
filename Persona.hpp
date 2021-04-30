@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 using namespace std;
 
@@ -13,5 +14,6 @@ class Persona
     private:
         Persona();
         virtual generarOrden() = 0;
-
+        void mostrarPersona();
+        void agregarDatos(string, string, char, int, string);  
 };

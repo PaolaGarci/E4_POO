@@ -7,7 +7,7 @@
 
 #ifndef inventario_productos_hpp
 #define inventario_productos_hpp
-class Inventario_productos{
+class InventarioProductos{
     protected:
         int cantidad;
     

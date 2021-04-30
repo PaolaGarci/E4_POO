@@ -5,9 +5,9 @@
 //  Created by Ernesto Godinez on 24/04/21.
 //
 
-#include "inventario_productos.hpp"
+#include "InventarioProductos.hpp"
 //CONSTRUCTORES
-Inventario_productos::Inventario_productos(){
+InventarioProductos::InventarioProductos(){
     cantidad=10;
 }
 

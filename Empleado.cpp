@@ -28,3 +28,16 @@ void Empleado::setCargo(string c){
 string Empleado::getCargo(){
     return Cargo;
 }
+
+void Empleado :: mostrarPersona()
+{
+    cout << "Nombre: " << nombre << endl;
+    cout << "Direccion: " << direccion << endl;
+    cout << "Sexo: " << sexo << endl;
+    cout << "Telefono: " << telefono << endl;
+    cout << "Fecha de Nacimiento: " << fechaNacimiento << endl;
+    cout << "Cargo: " << cargo << endl;
+    cout << "Sucursal: " << sucursal << endl;
+}
+
+

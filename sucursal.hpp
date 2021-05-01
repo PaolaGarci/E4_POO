@@ -14,7 +14,7 @@ using namespace std;
 class Sucursal:public InventarioProductos{
     public:
         Sucursal();
-        Sucursal(Producto*, string);
+        Sucursal( string);
      //los siguientes van a cambiar los empleados de una sucursal
         void agregar(Empleado);
         void modificar(Empleado,string);

@@ -2,6 +2,8 @@
 #ifndef EMPLEADO_HPP_INCLUDED
 #define EMPLEADO_HPP_INCLUDED
 #include "Persona.hpp"
+#include "Cliente.hpp"
+#include "InventarioProductos.hpp"
 #include <iostream>
 using namespace std;
 
@@ -16,7 +18,7 @@ public:
     Empleado( string nom, string dir, char sex, int cel, string fechaNac, string car, string ubi);
     void mostrarPersona();
     void transferir(string);
-    void generarOrden();
+    void generarOrden(Cliente, InventarioProductos, string);
     //setters
     void setSucursal(string);
     void setCargo(string);

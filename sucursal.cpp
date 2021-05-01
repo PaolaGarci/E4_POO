@@ -8,19 +8,13 @@
 #include "Sucursal.hpp"
 
 Sucursal :: Sucursal (){
-    nombre=" ";
+    nombre=" Vallarta";
     
 }
-Sucursal :: Sucursal (Producto *arreglo,string nom){
+Sucursal :: Sucursal (string nom){
     //Producto P1,P2,P3,P4,P5; //Crea productos default para la lista, esta tendrá q ser diferente al decidir q productos queremos
     //Producto listaP[5]={P1,P2,P3,P4,P5};
-    for (int numero = 0; numero < 5; numero ++)
-    {
-        listaProductos[numero] = *(arreglo + numero);
-    }
-    
-    nombre=nom;
-    
+    nombre=nom; 
 }
 //metodos q a/m/b productos en la lista
 void Sucursal::agregar(Empleado e){ //se agrega la sucursal de un empleado
@@ -28,7 +22,6 @@ void Sucursal::agregar(Empleado e){ //se agrega la sucursal de un empleado
 }
 void Sucursal::modificar(Empleado e,string carg){ //cargos
     e.setCargo(carg);
-    
 }
 void Sucursal::borrar(Empleado e){
     e.setSucursal(" ");

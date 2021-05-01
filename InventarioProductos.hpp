@@ -14,9 +14,10 @@ using namespace std;
 class InventarioProductos{
     protected:
         int cantidadExistentes = 0;
-        Producto *listaProductos;
+        //Producto *listaProductos;
     
     public:
+        Producto *listaProductos;
         InventarioProductos();
         void setCantidadExistentes(Producto, int);
         int getCantidadExistentes(Producto);

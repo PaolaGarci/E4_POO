@@ -10,8 +10,8 @@ int main (){
     cout<<"Bienvenidos al Daxuscorporativo"<<endl;
     cout<<"Estos son los productos que tendran las sucursales"<<endl;
     //crear productos que tendran todas las sucursales
-    Producto sopa("sopa",1, 15,15,2,4),manzana("manzana",2, 15,15,2,4),pera("pera",3, 15,15,2,4);
-    Producto cloro("cloro",4, 15,15,2,4),suavitel("suavitel",5, 15,15,2,4); 
+    Producto sopa("sopa",1, 15,2,4),manzana("manzana",2,20,2,4),pera("pera",3,30,2,3);
+    Producto cloro("cloro",4,45,8,5),suavitel("suavitel",5,13,2,4); 
     
     // Creando una sucursal
      cout<<"Sucursal 2"<<endl;

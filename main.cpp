@@ -1,6 +1,6 @@
-#include "Cliente.hpp"
-#include "Sucursal.hpp"
-#include "Empleado.hpp"
+//#include "Cliente.hpp"
+#include "sucursal.hpp"
+//#include "Empleado.hpp"
 #include "InventarioProductos.hpp"
 
 #include <iostream>

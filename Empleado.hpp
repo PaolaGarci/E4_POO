@@ -2,7 +2,7 @@
 #ifndef EMPLEADO_HPP_INCLUDED
 #define EMPLEADO_HPP_INCLUDED
 #include "Persona.hpp"
-
+#include <iostream>
 using namespace std;
 
 class Empleado:public Persona{

@@ -14,6 +14,6 @@ class Persona
     public:
         //Persona();
         //Persona(string, string, char, int, string);
-        virtual void mostrarPersona();
+        virtual void mostrarPersona() = 0;
         void agregarDatos(string, string, char, int, string);  
 };

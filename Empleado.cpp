@@ -42,7 +42,7 @@ void Empleado :: mostrarPersona()
 }
 void Empleado::generarOrden(Cliente c, InventarioProductos InvProd,string formaPago ){
     //incluye producto, total y cliente
-    if (Cargo=="gerentes" || Cargo=="vendedores"){
+    if (Cargo=="gerente" || Cargo=="vendedor"){
         c.mostrarPersona();
         InvProd.mostrarInventario();
         cout<<"El método de pago es: "<<formaPago<<endl;
@@ -51,6 +51,10 @@ void Empleado::generarOrden(Cliente c, InventarioProductos InvProd,string formaP
             total=total+InvProd.getCantidadExistentes(InvProd.listaProductos[i])*InvProd.listaProductos[i].getPrecioVenta();
         }
         cout<<"El total de orden es: "<<total<<endl;
+        cout << "Cliente que genero la orden" << endl;
+        c.mostrarPersona();
+        cout << " " << endl;
+        
     }
     else{
         cout<<"Solo los gerentes y vendedores pueden realizar una venta"<<endl;

@@ -14,7 +14,7 @@ int main (){
     Producto cloro("cloro",4,45,8,5),suavitel("suavitel",5,13,2,4); 
     
     // Creando una sucursal
-     cout<<"Sucursal 2"<<endl;
+    cout<<"Sucursal 2"<<endl;
     Sucursal sucursal1("Vallarta");
     sucursal1.mostrarCantidadProd(sopa);
     sucursal1.agregar(sopa, 5);
@@ -63,7 +63,8 @@ int main (){
     orden1.setCantidadExistentes(manzana,3);
     emp3.generarOrden(c1,orden1,"tarjeta");
     //Generar orden 2
-     orden2.setCantidadExistentes(cloro,2);
+    InventarioProductos orden2;
+    orden2.setCantidadExistentes(cloro,2);
     orden2.setCantidadExistentes(suavitel,3);
     emp2.generarOrden(c1,orden1,"efectivo");
     //Cliente(string nom, string dir, char sex, int cel, string fechaNac,string rfc)

@@ -45,7 +45,7 @@ void Empleado::generarOrden(Cliente c, InventarioProductos InvProd,string formaP
     if (Cargo=="gerente" || Cargo=="vendedor"){
         c.mostrarPersona();
         InvProd.mostrarInventario();
-        cout<<"El método de pago es: "<<formaPago<<endl;
+        cout<<"El metodo de pago es: "<<formaPago<<endl;
         int total=0;
         for (int i=0;i<5;i++){
             total=total+InvProd.getCantidadExistentes(InvProd.listaProductos[i])*InvProd.listaProductos[i].getPrecioVenta();

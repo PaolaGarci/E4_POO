@@ -25,7 +25,7 @@ void Cliente::modificar(string nom){
 void Cliente::borrar(){
     nombre="";
     direccion="";
-    sexo='';
+    sexo='N';
     telefono=0;
     fechaNacimiento="";
     RFC="";

@@ -8,10 +8,11 @@ Producto::Producto(){
     size=0;
     peso=0;
 }
-Producto::Producto(string nom,int codP,float pVenta,float pCompra,float s,float p){
+Producto::Producto(string nom,int codP,float pCompra,float s,float p){
     nombreProd = nom;
     codigoProducto=codP;
-    precioVenta=pVenta;
+    //16% de iva y 20% de ganancia
+    precioVenta=pCompra*1.36;
     precioCompra=pCompra;
     size=s;
     peso=p;

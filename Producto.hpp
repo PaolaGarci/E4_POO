@@ -1,28 +1,25 @@
-
-
 #include <iostream>
 using namespace std;
 
 class Producto{
-    public:
+    private:
         string nombreProd;
         int codigoProducto;
         float precioVenta;
         float precioCompra;
         float size;
         float peso;
-        int cantidadExistente;
+        int cantidadExistente = 0;
 
+    public:
         Producto();
         Producto(string,int,float,float,float,float);
         void mostrarProducto();
-        void agregar();
-        void modificar();
-        void borrar();
         int getCantExt();
         void setCantExt(int);
+        string getNombre();
+        float getPrecioVenta();
+        float getPrecioCompra();
+        float getSize();
+        float getPeso();
 };
-
-
-
-

@@ -7,7 +7,6 @@
 
 #ifndef sucursal_hpp
 #define sucursal_hpp
-#include <stdio.h>
 #include "InventarioProductos.hpp"
 #include "Empleado.hpp"
 #include <iostream>

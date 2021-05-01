@@ -40,7 +40,7 @@ void Sucursal :: agregar(Producto prod,int cant){
 
 void Sucursal :: mostrarCantidadProd(Producto prod)
 {
-    cout << "Existen: " << this->getCantidadExistentes(prod) << " articulos" << endl;
+    cout << "Existen: " << this->getCantidadExistentes(prod) << " articulos del tipo: " << this->getNombre(prod) << endl;
 }
 
 void Sucursal :: borrar(Producto prod, int cant)

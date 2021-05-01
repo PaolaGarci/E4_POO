@@ -21,7 +21,6 @@ class Sucursal:public InventarioProductos{
         void borrar(Empleado);
     //sobreescritura para productos
         void agregar(Producto,int);
-        void modificar(Producto);
         void borrar(Producto, int); // Valores negativos
         void mostrarCantidadProd(Producto);
         void mostrarSucursal();

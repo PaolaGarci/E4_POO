@@ -13,5 +13,7 @@ class Cliente : public Persona
         Cliente();
         Cliente(string nom, string dir, char sex, int cel, string fechaNac,string rfc);
         void mostrarPersona();
+        void modificar(string);
+        void borrar();
 };
 #endif // PAQUETE_H_INCLUDED

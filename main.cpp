@@ -14,7 +14,7 @@ int main (){
     Producto cloro("cloro",4,45,8,5),suavitel("suavitel",5,13,2,4); 
     
     // Creando una sucursal
-    cout<<"Sucursal 2"<<endl;
+    cout<<"Sucursal 1"<<endl;
     Sucursal sucursal1("Vallarta");
     sucursal1.mostrarCantidadProd(sopa);
     sucursal1.agregar(sopa, 5);
@@ -40,14 +40,13 @@ int main (){
     sucursal1.mostrarCantidadProd(sopa);
     sucursal1.agregar(sopa, 5);
     sucursal1.mostrarCantidadProd(sopa);
-    sucursal1.borrar(sopa, 2);
-    sucursal1.mostrarCantidadProd(sopa);
     sucursal1.mostrarCantidadProd(manzana);
     sucursal1.agregar(manzana, 2);
     sucursal1.mostrarCantidadProd(sopa);
     sucursal1.mostrarCantidadProd(manzana);
     sucursal1.agregar(sopa, 2);
     sucursal1.mostrarCantidadProd(sopa);
+   
     // Creando un empleado Sucursal 2
     Empleado emp1("Juan","av. X",'M',33234565,"23/04/01","gerente","Vallarta");
     Empleado emp2("Juan","av. X",'M',33234565,"23/04/01","vendedor","Vallarta");
@@ -55,9 +54,10 @@ int main (){
 
     sucursal1.mostrarSucursal();
     
-    // Creando un cliente
-    Cliente c1("pepe","sss",'M',2333345,"01/01/02","A000000");
-
+    // Creando tres clientes
+    Cliente c1("Ivan","sss",'M',2333345,"01/01/02","A000000");
+    Cliente c2("Alejandro","Av.Independencia",'F',33234324234,"03/04/86","A000003");
+    Cliente c3("García","grupo70",'M',332343231,"06/21/70","A000004");
     InventarioProductos orden1;
     orden1.setCantidadExistentes(sopa,2);
     orden1.setCantidadExistentes(manzana,3);
@@ -67,6 +67,8 @@ int main (){
     orden2.setCantidadExistentes(cloro,2);
     orden2.setCantidadExistentes(suavitel,3);
     emp2.generarOrden(c1,orden1,"efectivo");
-    //Cliente(string nom, string dir, char sex, int cel, string fechaNac,string rfc)
+    //modificar y borrar clientes
+    c2.modificar("Yisus");
+    c3.borrar();
     return 0;
 }

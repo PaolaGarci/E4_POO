@@ -40,3 +40,10 @@ void Sucursal :: borrar(Producto prod, int cant)
 {
     this->setCantidadExistentes(prod, -cant);
 }
+void Sucursal :: mostrarSucursal()
+{
+    cout<<"Nombre: "<< nombre<<endl;
+    cout<<"Nuestros productos: "<<cantidadExistentes<<endl;
+    
+}
+

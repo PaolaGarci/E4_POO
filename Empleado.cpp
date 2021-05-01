@@ -1,16 +1,14 @@
 #include "Empleado.hpp"
 
-
-
 // Constructor Default
-Empleado :: Empleado():Persona()
+Empleado :: Empleado()
 {
     Cargo="";
     Sucursal="";
 }
 
 // Constructor con parametros
-Empleado :: Empleado(string nom, string dir, char sex, int cel, string fechaNac,string car, string suc):Persona(nom,dir,sex, cel,fechaNac)
+Empleado :: Empleado(string nom, string dir, char sex, int cel, string fechaNac,string car, string suc)
 {
     Cargo=car;
     Sucursal=suc;
@@ -36,8 +34,8 @@ void Empleado :: mostrarPersona()
     cout << "Sexo: " << sexo << endl;
     cout << "Telefono: " << telefono << endl;
     cout << "Fecha de Nacimiento: " << fechaNacimiento << endl;
-    cout << "Cargo: " << cargo << endl;
-    cout << "Sucursal: " << sucursal << endl;
+    cout << "Cargo: " << Cargo << endl;
+    cout << "Sucursal: " << Sucursal << endl;
 }
 
 

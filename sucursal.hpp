@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include "Producto.hpp"
 #include "InventarioProductos.hpp"
+#include "Empleado.hpp"
 #include <iostream>
 using namespace std;
 class Sucursal:public InventarioProductos{

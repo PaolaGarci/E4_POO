@@ -12,7 +12,7 @@ private:
     float peso;
 public:
     Producto();
-    Producto();
+    Producto(int,float,float,float,float);
     void mostrarProducto();
     void agregar();
     void modificar();

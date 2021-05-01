@@ -1,13 +1,14 @@
 #include "Cliente.hpp"
 
-Cliente::Cliente(){
+Cliente::Cliente()
+{
     RFC="";
- 
 }
 
-Cliente::Cliente(string nom, string dir, char sex, int cel, string fechaNac,string rfc){
-  
-   RFC=rfc;
+Cliente::Cliente(string nom, string dir, char sex, int cel, string fechaNac,string rfc)
+{
+    this->agregarDatos(nom, dir, sex, cel, fechaNac);
+    RFC=rfc;
 }
 
 void Cliente :: mostrarPersona()
@@ -18,5 +19,4 @@ void Cliente :: mostrarPersona()
     cout << "Telefono: " << telefono << endl;
     cout << "Fecha de Nacimiento: " << fechaNacimiento << endl;
     cout << "RFC: " << RFC << endl;
-    
 }

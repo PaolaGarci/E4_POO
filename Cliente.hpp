@@ -4,14 +4,15 @@
 
 using namespace std;
 
-class Cliente:public Persona{
-private:
-    string RFC;
+class Cliente : public Persona
+{
+    private:
+        string RFC;
 
-public:
-    Cliente();
-    Cliente(string nom, string dir, char sex, int cel, string fechaNac,string rfc);
-    void mostrarPersona();
+    public:
+        Cliente();
+        Cliente(string nom, string dir, char sex, int cel, string fechaNac,string rfc);
+        void mostrarPersona();
 
 };
 #endif // PAQUETE_H_INCLUDED

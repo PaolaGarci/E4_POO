@@ -15,7 +15,7 @@ public:
     Empleado( string car, string ubi);
     Empleado( string nom, string dir, char sex, int cel, string fechaNac, string car, string ubi);
     void mostrarPersona();
-    void transferir();
+    void transferir(string);
     void generarOrden();
     //setters
     void setSucursal(string);

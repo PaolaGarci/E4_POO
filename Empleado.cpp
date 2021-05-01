@@ -12,8 +12,11 @@ Empleado :: Empleado(string nom, string dir, char sex, int cel, string fechaNac,
 {
     Cargo=car;
     Sucursal=suc;
+    this->agregarDatos(nom, dir, sex, cel, fechaNac);
 }
-void Empleado :: transferir(){
+void Empleado :: transferir(string sucursalNueva)
+{
+    Sucursal = sucursalNueva;
 }
 //setters
 void Empleado::setSucursal(string s){

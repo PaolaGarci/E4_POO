@@ -12,7 +12,7 @@ class Persona
         string fechaNacimiento;
 
     private:
-        Persona();
+        //Persona();
         virtual void mostrarPersona() = 0;
         void agregarDatos(string, string, char, int, string);  
 };

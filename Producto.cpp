@@ -8,12 +8,14 @@ Producto::Producto(){
     size=0;
     peso=0;
 }
-Producto::Producto(int codP,float pVenta,float pCompra,float s,float p){
+Producto::Producto(string nom,int codP,float pVenta,float pCompra,float s,float p){
+    nombreProd = nom;
     codigoProducto=codP;
     precioVenta=pVenta;
     precioCompra=pCompra;
     size=s;
     peso=p;
+    
 }
 void Producto::mostrarProducto(){
     cout<<codigoProducto<<endl;
@@ -22,4 +24,14 @@ void Producto::mostrarProducto(){
     cout<<size<<endl;
     cout<<peso<<endl;
     
+}
+
+int Producto :: getCantExt()
+{
+    return cantidadExistente;
+}
+
+void Producto :: setCantExt(int cant)
+{
+    cantidadExistente = cant;
 }

@@ -7,15 +7,18 @@
 
 #include "Sucursal.hpp"
 
-Sucursal::Sucursal:InventarioProductos(cantidadExistentes){
-    listaProductos=listaP;
+Sucursal :: Sucursal (){
     nombre=" ";
     
 }
-Sucursal::Sucursal(int cant,string nom):InventarioProductos(cantidadExistentes){
-    Producto P1,P2,P3,P4,P5; //Crea productos default para la lista, esta tendrá q ser diferente al decidir q productos queremos
-    Producto listaP[5]={P1,P2,P3,P4,P5};
-    listaProductos=listaP;
+Sucursal :: Sucursal (Producto *arreglo,string nom){
+    //Producto P1,P2,P3,P4,P5; //Crea productos default para la lista, esta tendrá q ser diferente al decidir q productos queremos
+    //Producto listaP[5]={P1,P2,P3,P4,P5};
+    for (int numero = 0; numero < 5; numero ++)
+    {
+        listaProductos[numero] = *(arreglo + numero);
+    }
+    
     nombre=nom;
     
 }
@@ -31,7 +34,16 @@ void Sucursal::borrar(Empleado e){
     e.setSucursal(" ");
 }
 //metodos sobrecarga (funciones) de productos, agrega cantidad de producto a una sucursal
-void Sucursal::agregar(int cant){
-    cantidad=cantidad+cant;
+void Sucursal :: agregar(Producto prod,int cant){
+    this->setCantidadExistentes(prod, cant);
 }
 
+void Sucursal :: mostrarCantidadProd(Producto prod)
+{
+    cout << "Existen: " << this->getCantidadExistentes(prod) << " articulos" << endl;
+}
+
+void Sucursal :: borrar(Producto prod, int cant)
+{
+    this->setCantidadExistentes(prod, -cant);
+}

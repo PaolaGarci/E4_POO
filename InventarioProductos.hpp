@@ -7,14 +7,19 @@
 
 #ifndef inventario_productos_hpp
 #define inventario_productos_hpp
+#include "Producto.hpp"
+#include <iostream>
+using namespace std;
+
 class InventarioProductos{
     protected:
-        int cantidadExistentes;
+        int cantidadExistentes = 0;
+        Producto *listaProductos;
     
     public:
         InventarioProductos();
-        InventarioProductos(int);
-        void setCantidadExistentes(int);
+        void setCantidadExistentes(Producto, int);
+        int getCantidadExistentes(Producto);
         
 };
 

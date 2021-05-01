@@ -11,7 +11,7 @@ class Persona
         int telefono;
         string fechaNacimiento;
 
-    private:
+    public:
         //Persona();
         //Persona(string, string, char, int, string);
         virtual void mostrarPersona();

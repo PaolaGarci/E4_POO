@@ -24,10 +24,11 @@ class Sucursal:public InventarioProductos{
         void modificar(Producto);
         void borrar(Producto, int); // Valores negativos
         void mostrarCantidadProd(Producto);
+        void mostrarSucursal();
     protected:
         string nombre;
         int cantidad;
-        Empleado listaEmpleados[3];
+
 };
 
 #endif /* sucursal_hpp */

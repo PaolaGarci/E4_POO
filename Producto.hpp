@@ -13,7 +13,7 @@ class Producto{
 
     public:
         Producto();
-        Producto(string,int,float,float,float,float);
+        Producto(string,int,float,float,float);
         void mostrarProducto();
         int getCantExt();
         void setCantExt(int);
